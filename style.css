@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.hero-bg {
+    background: linear-gradient(to right bottom, #4f46e5, #8b5cf6, #ec4899);
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+}
+
+header button:active {
+    background-color: #4338ca; 
+    transform: scale(1.02); 
+}
+
+section button:active {
+    background-color: #e2e8f0; 
+    color: #4338ca; 
+    transform: scale(0.98); 
+}
+
+nav a:active {
+    color: #4338ca; 
+}
+
+a.group:active {
+    color: #4338ca; 
+}
